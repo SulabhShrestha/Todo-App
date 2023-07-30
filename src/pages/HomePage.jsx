@@ -4,11 +4,11 @@ import { TodoProvider } from "../context/TodoContext";
 
 function HomePage() {
     return (
-      <div className="mx-14 my-4">
-        <TodoProvider>
+      <div className="mx-20 my-4">
+        
           <AddTodo />
           <TodoList />
-        </TodoProvider>
+        
       </div>
     );
 }

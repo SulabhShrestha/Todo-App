@@ -20,9 +20,17 @@ const TodoProvider = function({children}){
         console.log(todos);
     }
 
+    // id is uuid, string
+    function deleteTodoItem(id){
+        setTodos(todos.filter(todo => id !== todo.id));
+
+        console.log(todos)
+    }
+
     return <TodoContext.Provider value={{
         todos, 
         addNewTodoItem,
+        deleteTodoItem,
     }}>
         {children}
     </TodoContext.Provider>
