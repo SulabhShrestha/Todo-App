@@ -1,5 +1,14 @@
+import AddTodo from "../components/AddTodo";
+import TodoList from "../components/TodoList";
+
 function HomePage() {
-    return ( <h1>Home page</h1> );
+    return ( 
+        <div className="mx-14 my-4">
+        <AddTodo/>
+
+        <TodoList/>
+        </div>
+     );
 }
 
 export default HomePage;
